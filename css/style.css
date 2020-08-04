@@ -22,12 +22,15 @@ h3 {
   grid-row: 1; 
 }
 
-img {
-  display: block;
-  margin: auto;
+.profile_bodyguard-img {
   grid-column: 1 / span 2;
   grid-row: 2;
+  display: block;
+  margin: auto;
 }
+
+
+
 
 p {
   text-align: center;
@@ -41,18 +44,24 @@ h5 {
   grid-row: 4; 
 }
 
+
+.profile_bodyguard-btn
+{
+  grid-column: 2 / span 2;
+  grid-row: 4; 
+}
+
 button { 
   border-radius: 20px;
   border: none;
   background-color: black;
   color: white;
-  min-width: 150px;
+  min-width: 100px;
   height: 35px;
-  grid-column: 2 / span 2;
-  grid-row: 4; 
+
 }
 
-.grid {
+.profiles {
   display: grid;
   margin: auto;
   grid-template-columns: 90%;
@@ -60,13 +69,13 @@ button {
   
 }
 
-.gridContainer {
+.profile_bodyguard {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 5px;
 }
 
-.mainConteiner {
+.bodyguard_profiles {
   margin-left: 10%;
   max-width: 90%;
 }
@@ -79,11 +88,13 @@ button {
       margin-left: 5px;
     }  
 
-    img {
-      margin: 0;
+
+    .profile_bodyguard-img {
       grid-column: 1 / span 1;
-      grid-row: 2; 
+      grid-row: 2;
     }
+
+
 
     p{
       margin-left: 5px;
@@ -104,13 +115,13 @@ button {
       grid-row: 3; 
     }
 
-    .grid {
+    .profiles {
       grid-template-columns: 30% 30% 30%; 
      
 
     } 
 
-    .gridContainer {
+    .profile_bodyguard {
       margin-left: 5px;
       max-width: 350px;
     }
