@@ -1,0 +1,18 @@
+$primary_color: black;
+$text_color: white;
+$hint_color:  #8E8E8E;
+$botton_line_color: #D8D8D8;
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin fontstyle() {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 14px;
+    color: $text_color;
+}
