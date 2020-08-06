@@ -1,0 +1,27 @@
+{
+  "name": "akureytraining",
+  "version": "1.0.0",
+  "description": "This repository is for put my signatures related with the Akurey training.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wilopez95/AkureyTraining.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wilopez95/AkureyTraining/issues"
+  },
+  "homepage": "https://github.com/Wilopez95/AkureyTraining#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp-rename": "^2.0.0"
+  }
+}
