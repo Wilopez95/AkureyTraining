@@ -14,7 +14,7 @@
  **_DETAILS**
 
 ##Solution Description:
-
+ **_DETAILS**
 
 ##Review Manager:
  **_PERSON**
