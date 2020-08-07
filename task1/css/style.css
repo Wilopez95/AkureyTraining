@@ -1,0 +1,57 @@
+ul {
+    display: flex;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+h3 {
+    border-bottom: 2px solid lightgray;
+    font-family: 'Roboto', sans-serif;
+    line-height: 40px;
+    margin: 0;
+}
+
+img { 
+    margin-right: 15px;
+    width: 160px;
+    height: auto;
+    display: block;
+}
+
+p {
+    text-align: justify;
+}
+
+
+button {
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    min-width: 200px;
+    height: 35px;
+    display: block;
+    align-self: center;
+}
+
+h5{
+    width: 50%;
+    margin: 0;
+    font-size: 20px;
+}
+
+.actions {
+    display: flex;
+    width: 100%;
+
+}
+
+
+.maincontent {
+    display: flex;
+    padding: 10px 0;
+
+}

@@ -4,10 +4,10 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
-    return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
+    return gulp.src('task4/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sass({ outputStyle: 'compressed'}))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('app/css/'))
+    .pipe(gulp.dest('task4/css/'))
     .pipe(browserSync.stream())
    })
 
