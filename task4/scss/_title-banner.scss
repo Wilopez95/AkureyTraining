@@ -1,0 +1,101 @@
+.banner {
+    background-image: url('../assets/banner-mobile.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 451px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        width: 238px;
+        height: 56;
+        margin-top: auto;
+        margin-bottom: 15px;
+        p {
+            font-family: Arial;
+            font-size: 24px;
+            line-height: 28px;
+            color: $primary_color;
+            margin: 0;
+        }
+    
+    }
+
+    .search{
+        background: white;
+        margin-bottom: 17px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        height: 44px;
+        width: 303px;
+        input {
+            margin-left: 6px;
+            width: 100%;
+            font-size: 18px;
+            line-height: 21px;
+            border: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .icon-search {
+            font-size: 23px;
+            margin-right: 8px;
+            color: $hint_color;
+        }
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .banner {
+        background-image: url('../assets/banner.png');
+        background-size: cover;
+        
+        
+        width: auto;
+        height: 428px;
+        .title {
+            width: 636px;
+            height: 83px;
+            p {
+                font-size: 36px;
+                line-height: 42px;
+                width: 359px;
+                color: $text_color;
+            }
+        }
+
+        .search {
+            width: 636px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner{
+        height: 428px;
+        align-items: baseline;
+
+        .title {
+            width: 591px;
+            height: 42px;
+            margin-bottom: 34px;
+            margin-left: 95px;
+
+            p {
+                width: 100%;
+            }
+        }
+
+        .search {
+            width: 636px;
+            margin-bottom: 151px;
+            margin-left: 95px;
+        }
+    }
+}

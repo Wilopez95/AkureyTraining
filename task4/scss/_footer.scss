@@ -1,0 +1,39 @@
+
+footer {
+    background: $primary_color;
+    color: $text_color;
+    display: flex;
+    flex-direction: column;
+    height: 88px;
+    .footer_rigths {
+        .footer_rigths_text {
+            @include fontstyle();
+            margin-left: 21px;
+        }
+    }
+    
+    .footer_terms-and-contions a{
+        @include fontstyle();
+        margin-left: 21px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        .footer_rigths {
+            @include flexCenter();
+            .footer_rigths_text {
+                margin-left: 14px;
+            }
+        }
+
+        .footer_terms-and-contions {
+            @include flexCenter();
+            margin-left: auto;
+            .footer_terms-and-contions_link {
+                margin-right: 23px;
+            }
+        }
+    }
+  }
