@@ -1,0 +1,78 @@
+@mixin flexCenter() {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.navbar__conteiner {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 77px;
+
+}
+
+.navbar__logo {
+    @include flexCenter();
+    .navbar__logo--img{
+        margin-left: 19px;
+        margin-right: 20px;
+    }
+
+}
+
+.navar__menu_ico {
+    @include flexCenter();
+    margin-left: auto;
+    .icon-menu{
+        font-size: 55px;
+        margin-right: 20px;
+        color: white;
+    }
+}
+
+.navbar__menu{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+.navar__menu_ico {
+    display: none;
+}
+
+.navbar__menu{
+    display: block;
+    margin-left: auto;
+}
+
+.navbar__menu__conteiner {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 30px;
+
+}
+
+.navbar__menu--iten {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px 0px 15px;
+}
+
+.nav__login--btn {
+    margin: 0 69px 0px 69px;
+}
+
+.active {
+    border-bottom: 4px solid currentColor;
+}
+
+}
