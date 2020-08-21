@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" href="./css/styles.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link href="https://file.myfontastic.com/ZtwJ7KbemWscGGTUf8VYUF/icons.css" rel="stylesheet">
+        <title>Asignacion 7</title>
+    </head>
+    <body onload="get_bodyguards()">
+        <header>
+            <div class="header_logo">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <div class="header_nav">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#" class="active">Directorio de Agentes</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#" class="nav_login_btn">Ingresar</a></li>
+                    </ul>
+                </div>
+                <span class="icon-menu"></span>
+            </div>    
+        </header>
+        <div class="banner">
+            <div class="title">
+                <p>Los Mejores agentes de seguridad</p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Buscar por Ubicación" name="find" value="">
+                <span class="icon-search" onclick="find()"></span>
+            </div>
+        </div >
+        <div>
+            <ul class="profiles-bodyguards"  id="contenido">
+
+            </ul>
+        </div>
+        
+    </body>
+    <footer>
+        <div class="footer_rigths">
+            <p class="footer_rigths_text">Desarrollado por Akurey.com Todos los derechos reservados.</p>
+        </div>
+        <div class="footer_terms-and-contions">
+            <a class="footer_terms-and-contions_link" href="#">Terminos y condiciones</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</html>

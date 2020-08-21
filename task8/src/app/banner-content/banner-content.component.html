@@ -1,0 +1,35 @@
+<div class="banner">
+    <div class="banner__title">
+        <p class="banner__title--text">
+            Los Mejores agentes de seguridad
+        </p>
+    </div>
+    <div class="banner__searchbar">
+        <input type="text" class="banner__searchbar--input"  placeholder="Buscar por Ubicación" name="findPost" [(ngModel)]="filterPost">
+        <span class="icon-search"></span>
+    </div>
+</div>
+<div class="bodyguard">
+    <ul class="bodyguards__profiles">
+        <li class="bodyguard__profile__details" *ngFor="let bodyguard of bodyguards | filter:filterPost">
+            <div class="bodyguard__profile__tittle">
+                <h3 class="bodyguard__profile__tittle--name">{{bodyguard.name}}</h3>
+
+                <div class="bodyguard__profile__certificate" *ngIf=bodyguard.isCertified>
+                    <img src="../../assets/certified.png" alt="" class="bodyguard__profile__certificate--certificate">
+                </div>   
+            </div>
+            <div class="bodyguard__profile__body">
+                <img src={{bodyguard.image}} alt="" class="bodyguard__profile__body--imagen">
+                <p class="bodyguard__profile__body--description">{{bodyguard.description}}</p>
+            </div>
+            <div class="bodyguard__profile__options">
+                    <h5 class="bodyguard__profile__options--price">Desde: ${{bodyguard.rate}}/{{bodyguard.hours}}</h5>
+                    <div class="bodyguard__profile__options--btn">
+                        <button type="button">Contratar</button>
+                    </div>
+            </div>
+        </li>
+    </ul>
+</div>
+

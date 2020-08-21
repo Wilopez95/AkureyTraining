@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML + JS + CSS</title>
+  <link rel="stylesheet" href="src/assets/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+</head>
+
+<body class="conteiner" onload="LoadHistory()">
+  <div class="title__conteiner">
+    <h1 id="tittle" class="tittle">Whack-a-mole! <span class="score">0</span></h1>
+  </div>
+  
+  <div class="score__table" >
+    <h3 class="score__table--tittle" >Score history</h3>
+    <table id="hScores" class="scores__history">
+      <tr>
+        <th class="titlescore">Username</th>
+        <th class="titlescore">Score</th> 
+      </tr>
+    </table>
+  </div>
+    <div class="game__conteiner hide">
+      <div class="hole hole1" onclick="miss()">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole2" onclick="miss()">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole3" onclick="miss()">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole4" onclick="miss()">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole5" onclick="miss()">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole6" onclick="miss()">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole7"  onclick="miss()">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole8"  onclick="miss()">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole9"  onclick="miss()">
+        <div class="mole" ></div>
+      </div>
+    </div>
+    <div class="options--conteiner">
+      <input type="text" class="options--input" name="username" value="" placeholder="username">
+      <button class="options--btn" onClick="game.startGame()">WHACK!</button>
+    </div>
+  
+  <audio id= "miss" src="src/assets/sounds/hihat.wav"></audio>
+  <audio id= "hit" src="src/assets/sounds/kick.wav"></audio>
+  <script src="src/game.js"></script>
+</body>
+
+</html>
