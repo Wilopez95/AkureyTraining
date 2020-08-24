@@ -1,0 +1,30 @@
+$primary_color:  #ffc600;
+$text_color: black;
+
+body {
+    background: $primary_color;
+}
+
+
+.title__conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title {
+        color: $text_color;
+        font-size: 2rem;
+        line-height: 1;
+        font-family: 'Amatic SC', cursive;
+        border-bottom: 2px solid $text_color
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .title__conteiner {
+        .title{ 
+            font-size: 5rem;
+          }
+    }
+
+}
