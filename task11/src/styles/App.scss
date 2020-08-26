@@ -1,0 +1,175 @@
+$primary_color:  #ffc600;
+$text_color: black;
+
+body {
+    background: $primary_color;
+}
+
+
+.title__conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title {
+        color: $text_color;
+        font-size: 2rem;
+        line-height: 1;
+        font-family: 'Amatic SC', cursive;
+        border-bottom: 2px solid $text_color
+    }
+}
+
+
+.score__table{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .score__table--tittle {
+      font-size: 2rem;
+  }
+}
+
+.scores__history {
+  width: 80%;
+  border-collapse: collapse;
+  table, th, td {
+    border: 1px solid black;
+    
+  }
+
+  .titlescore {
+    background: black;
+    color: white;
+  }
+
+
+
+  th, td {
+    padding: 5px;
+  }
+  th {
+    text-align: left;
+  }
+
+}
+
+.game__container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+  }
+
+.hole:after {
+    display: block;
+    background: url('../assets/imgs/dirt.svg') bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height:70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+  }
+
+  .mole {
+    background: url('../assets/imgs/mole.svg') bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100%;
+    width:70%;
+    margin-left: 15%;
+    height: 100%;
+    transition:all 0.4s;
+  }
+
+  .hole.up .mole {
+    top: 0;
+    z-index: 3;
+  }
+
+  .options--conteiner{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .options--btn {
+      margin-top: 10px;
+      left: 10rem;
+      padding: 1rem;
+      font-size: x-large;
+      border-radius: 5px;
+      color: white;
+      background-color: black;
+    }
+    .options--input{
+      border: 2px solid black;
+      text-align: center;
+      height: 40px;
+      border-radius: 7px;
+    }
+  }
+
+@media (min-width: 768px) {
+  .tittle{ 
+    font-size: 4rem;
+}
+
+.score__table{
+  .score__table--tittle {
+      font-size: 3rem;
+  }
+}
+
+.hole {
+  height: 150px;
+}
+
+.mole {
+  background-size: 45%;
+}
+
+.options--conteiner{
+    .options--btn {
+      width: 50%;
+    }
+    .options--input{
+      height: 50px;
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+    .title__conteiner {
+        .title{ 
+            font-size: 5rem;
+          }
+    }
+
+    .hole {
+        height: 200px;
+      }
+
+    .mole {
+        background-size: 30%;
+      }
+
+    .options--conteiner{
+      .options--input{
+        font-size: 30px;
+      }
+    }
+
+}

@@ -1,17 +1,12 @@
-import React, {useState} from 'react';
-import '../styles.css';
+import React, { useState } from 'react';
 
-function Tittle() {
-    return (
-      <div>
-        <div className="title__conteiner">
-          <h1 className="title">
-              Whack-a-mole! 0
-          </h1>
-        </div>       
-      </div>
-    );
-  }
-  
-  export default Tittle;
-  
+
+export const Tittle = props => (
+  <div>
+    <div className="title__conteiner">
+      <h1 className="title">
+        {props.title} {props.score}
+      </h1>
+    </div>
+  </div>
+)

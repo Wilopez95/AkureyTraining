@@ -1,12 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-function Options() {
-    return (
-      <div>
-        Hola options
-      </div>
-    );
-  }
-  
-  export default Options;
-  
+
+
+export const Options = props => (
+  <div className="options--conteiner">
+     <input type="text" className="options--input" name="username" onChange={e=>props.UpdateUsername(e.target.value)} placeholder="username"></input>
+    <button className="options--btn" onClick={()=> props.play()}>WHACK!</button>
+  </div>
+)
