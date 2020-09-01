@@ -1,0 +1,91 @@
+.bodyguards__profiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    .bodyguard__profile__details {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: 242px;
+        margin-bottom: 40px;
+    }
+}
+
+.bodyguard__profile__tittle {
+    display: grid;
+    grid-template: 75% 25%;
+    border-bottom: 2px solid #D8D8D8;
+    margin: 0 20px 0 20px;
+    .bodyguard__profile__tittle--name{
+        grid-column: 1;
+        grid-row: 1;
+        font-family: Arial;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .bodyguard__profile__certificate {
+        grid-row: 1;
+        grid-column: 2;
+        margin-left: auto;
+    }
+}
+
+.bodyguard__profile__body {
+    display: grid;
+    grid-template: 50% 50%;
+    margin: 10px 20px 0 20px;
+    .bodyguard__profile__body--imagen {
+        grid-column: 1;
+        grid-row: 1;
+        height: 126px;
+        width: 117px;
+        margin-right: 15px;
+    }
+    .bodyguard__profile__body--description {
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 0;
+        font-family: Arial;
+        font-size: 12px;
+        text-align: justify;
+    }
+}
+
+.bodyguard__profile__options {
+    display: grid;
+    grid-template: 50% 50%;
+    margin: 0 20px 0 20px;
+    .bodyguard__profile__options--price {
+        grid-column: 1;
+        grid-row: 1;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .bodyguard__profile__options--btn {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 18px;
+            border: none;
+            background-color: black;
+            color: white;
+            width: 156px;
+            height: 34px;
+        
+        }
+        button:focus{
+            outline: none;
+
+        }
+    }
+}

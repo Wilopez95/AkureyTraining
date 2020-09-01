@@ -1,0 +1,53 @@
+@mixin fontstyle() {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+    margin-left: 21px;
+}
+
+
+.footer {
+    background: black;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer__rigths {
+    .footer__rigths--text {
+        @include fontstyle();
+    }
+}
+
+.footer__terms {
+    .footer__terms--link {
+    
+        @include fontstyle();
+    
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+    }
+    .footer__rigths {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .footer__terms {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-left: auto;
+        .footer__terms--link {       
+            margin-right: 23px;
+        
+        }
+    }
+}
