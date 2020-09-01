@@ -12,7 +12,7 @@ import miss from './assets/sounds/hihat.wav'
 
 function App() {
 
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(5);
   const [titleText, settitleText] = useState('Whack-a-mole!')
   const [userName, setUserName] = useState('Anonimous')
   const [playhit] = useSound(hit);
@@ -111,9 +111,10 @@ function App() {
 
   const play =()=> {
     //setLocal();//EXEC 1 TIME 
-    timeUp = false;
+    //timeUp = false;
+    //setScore(25)
     setTimeout(() => {playgame(); }, 1500);
-    setTimeout(() => timeUp = true, 10000)
+    setTimeout(() => {timeUp = true}, 10000)
   }
 
   const playgame = () => {
@@ -126,7 +127,7 @@ function App() {
         playgame();
       }else {
         settitleText('Game Over, Your score:');
-        console.log('Finish')
+        console.log('Finish: '+score)
       }
     },time)
   }
